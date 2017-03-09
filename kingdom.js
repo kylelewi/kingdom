@@ -200,7 +200,7 @@ const DomNodeCollection = __webpack_require__(0);
 const _docReadyCallbacks = [];
 let _docReady = false;
 
-window.$domingo = (arg) => {
+window.$kingDOM = (arg) => {
   switch(typeof(arg)){
     case "string":
       return nodeGetter(arg);
@@ -213,7 +213,7 @@ window.$domingo = (arg) => {
   }
 };
 
-$domingo.extend = (base, ...objects) => {
+$kingDOM.extend = (base, ...objects) => {
   objects.forEach( object => {
     for (let prop in object) {
       base[prop] = object[prop];
@@ -223,7 +223,7 @@ $domingo.extend = (base, ...objects) => {
   return base;
 };
 
-$domingo.ajax = options => {
+$kingDOM.ajax = options => {
   const request = new XMLHttpRequest();
   const defaults = {
     contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
@@ -233,7 +233,7 @@ $domingo.ajax = options => {
     error: () => {},
     data: {}
   };
-  options = $domingo.extend(defaults, options);
+  options = $kingDOM.extend(defaults, options);
   options.method = options.method.toUpperCase();
 
   if (options.method === "GET"){
