@@ -8,7 +8,7 @@ Example of $kingDOM usage:
 ```javascript
 // programatically build out artboard grid
 const artboard = $kingDOM('.artboard');
-for(var i = 0; i < numRows; i++) {
+for(let i = 0; i < numRows; i++) {
   artboard.append(`<div class='row row${i}'></div>`);
 }
 ```
@@ -17,7 +17,7 @@ for(var i = 0; i < numRows; i++) {
 // change html element background color
 function applyColor(thisColor) {
   let columns = $kingDOM(".column");
-  for (var i = 0; i < columns.nodes.length; i++) {
+  for (let i = 0; i < columns.nodes.length; i++) {
     columns.nodes[i].setAttribute(
       "style",
       color(thisColor)
