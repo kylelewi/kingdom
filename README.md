@@ -2,7 +2,7 @@
 A lightweight DOM manipulation library.
 
 ## Setup
-Download the source files lib/dom_node_collection.js and lib/main.js and use webpack to compile the files.
+Download the source files lib/dom_node_collection.js and lib/main.js and include them in your project.
 
 ## In Action
 Run the index.html file to see a quick demonstration of the library in action.
